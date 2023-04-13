@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./name.css">
+    <link rel="stylesheet" href="./game.css">
+    <link rel="stylesheet" href="./desktop.css">
+    <script src="./app.js" defer></script>
+    <script src="./game.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <h1> Play TIC, TAC, TOE</h1>
+            <p> Built with HTML, CSS and JavaScript </p>
+        </div>
+        <div class="player">
+            <div class="player-one">
+                <ul>
+                    <li> Player 1 </li>
+                    <li> <strong id="enteredNamePlayerOne"> PLAYER 1 NAME </strong> </li>
+                    <li> <strong> X </strong> </li>
+                    <li> 
+                        <button id ='playerOneBtn'> Edit </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="player-two">
+                <ul>
+                    <li> Player 2 </li>
+                    <li> <strong id="enteredNamePlayerTwo"> PLAYER 2 NAME </strong> </li>
+                    <li> <strong> O </strong> </li>
+                    <li>
+                        <button id ='playerTwoBtn'> Edit </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+ 
+            <div class="footer" id="startGameBtn">
+                <button> Start New Game </button>
+            </div>
+
+            <div class="game-div" id="game">
+                <p id="turnCall">Its your turn <span id="gameOnName"></span></p>
+
+                <div class="game-over" id="gameOver">
+                    <h1></h1>
+                    <p> Click 'Start New Game' above, to start a new game </p>
+                </div>
+
+                <ul>
+                    <li class="start"></li>
+                    <li class="start"></li>
+                    <li class="start"></li>
+
+                    <li class="start"></li>
+                    <li class="start"></li>
+                    <li class="start"></li>
+
+                    <li class="start"></li>
+                    <li class="start"></li>
+                    <li class="start"></li>
+                </ul>
+            </div>
+
+        <div class="choseNamePlayerOne" id="chosePlayerNameOne">
+                <div>
+                    <h1> Chose your name </h1>
+                    <label for="inputName"> Player Name </label>
+                    <input type="text" class="inputName" id="inputPlayerOne">
+                </div>
+    
+                <div class="nameConfirmation">
+                    <button id="cancelOne"> Cancel </button>
+                    <button id="confirmationOne"> Confirm </button>
+                </div>
+            </div>
+
+            <div class="choseNamePlayerTwo" id="chosePlayerNameTwo">
+                <div>
+                    <h1> Chose your name </h1>
+                    <label for="inputName"> Player Name </label>
+                    <input type="text" class="inputName" id="inputPlayerTwo">
+                </div>
+        
+                <div class="nameConfirmation">
+                    <button id="cancelTwo"> Cancel </button>
+                    <button id="confirmationTwo" > Confirm </button>
+                </div>
+            </div>
+    </main>
+    
+</body>
+</html>

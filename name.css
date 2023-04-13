@@ -1,0 +1,37 @@
+.choseNamePlayerOne, .choseNamePlayerTwo {
+    width: 300px;
+    top: 40%;
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: wheat;
+    padding: 6%;
+    border-radius: 1rem;
+    z-index: 1;
+}
+
+.choseNamePlayerOne input, .choseNamePlayerTwo input {
+    width: 50%;
+    align-self: center;
+    margin-bottom: 5%;
+}
+
+.choseNamePlayerOne input, .choseNamePlayerTwo input, .nameConfirmation button {
+    padding: 0.5rem;
+}
+
+.nameConfirmation {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nameConfirmation button {
+    width: 45%;
+}
+
+.warning{
+    font-size: 0.8rem;
+    font-style: italic;
+    color: red;
+    margin-bottom: 2px;
+}

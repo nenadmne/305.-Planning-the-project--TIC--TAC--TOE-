@@ -1,0 +1,46 @@
+@media(min-width:600px){
+    * {
+        font-size: 18px;
+    }
+    
+    html {
+        height: 100%;
+    }
+
+    body {
+        width: 100%;
+        padding: 0;
+        background: url('./images/tic-tac-toe-desktop.webp');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    main {
+        width: 620px;
+        padding: 20px;
+        border-radius: 1rem;
+        box-shadow: 40px 40px 50px rgba(0, 0, 0, 0.699);
+    }
+    .game-div li {
+        width: 100px;
+        height: 100px;
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.61);
+        margin: 5px;
+    }
+
+    .game-over {
+        width: 460px;
+    }
+
+    .choseNamePlayerOne, .choseNamePlayerTwo {
+        width: 450px;
+        top: 30%;
+        padding: 1rem;
+    }
+
+    .footer button {
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.61);
+    }
+
+}

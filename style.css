@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    min-width: 375px;
+}
+
+html, body, main, div, .player ul {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background: url('./images/mobile-phone-bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5%;
+}
+
+html, body, main, .footer{
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color:rgba(255, 255, 255, 0.95);
+    border-radius: 1rem;
+    padding: 10px;
+    width: 337.5px;
+}
+
+main, .header{
+    width: 100%;
+}
+
+.header, .footer button {
+    color: white;
+    background-color: blueviolet;
+}
+
+.header, .player, label {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+.player, .footer button, .header, h1 {
+   margin-bottom: 1.2rem; 
+}
+
+.player {
+    justify-content: space-between;
+}
+
+.player, .footer {
+    width: 100%;
+}
+
+.player {
+    flex-direction: row;
+}
+
+.player div {
+    flex-basis: 48%;
+    background-color: rgba(137, 43, 226, 0.267);
+    height: fit-content;
+}
+
+.player div, .li button:hover, .header{
+    border-radius: 1rem;
+}
+
+button, .header {
+    padding: 16px;
+}
+
+li, .player button, .player div{
+    list-style: none;
+    padding: 5px;
+}
+
+.player li:nth-child(2), .player li button{
+    color: blueviolet;
+}
+
+li button {
+    background-color: inherit;
+}
+
+li button:hover {
+    width: 40%;
+    background-color: rgba(137, 43, 226, 0.329);
+}
+
+.footer button {
+    width: 40%;
+    padding: 4%;
+    border-radius: 0.2rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.61);
+}
+
+button {
+    border: 0;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 70%;
+}

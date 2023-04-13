@@ -1,0 +1,83 @@
+.game-div, .game-over {
+    display: none;
+}
+
+.game-div, .game-div ul {
+    width: 100%;
+}
+.game-div ul{
+    flex-wrap: wrap;
+}
+
+.game-div ul, .start, .disabled {
+    display: flex;
+}
+
+.start, .disabled {
+    padding: 0;
+    flex-basis: 30%;
+    list-style: none;
+    margin: 3px;
+    font-size: 2.2rem;
+    width: 74px;
+    height: 74px;
+}
+
+.start {
+    background-color: rgba(255, 0, 234, 0.26);
+}
+
+.game-div ul, .game-div li, .game-over, .game-div {
+    align-items: center;
+    justify-content: center;
+}
+
+.start:hover {
+    cursor: pointer;
+}
+
+.start:hover, .disabled, .game-over {
+    background-color: blueviolet;
+}
+
+.disabled {
+    cursor: default;
+    pointer-events: none;
+}
+
+.disabled, .game-over{
+    color: white;
+}
+
+.game-over {
+    margin-bottom: 0.8rem;
+}
+
+.game-over {
+    padding: 3%;
+}
+
+.game-over {
+    width: 315px;
+}
+
+.game-over h1, .game-div p {
+    text-align: center;
+}
+
+.game-div p {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.game-div span {
+    font-weight: bold;
+}
+
+.game-over p {
+    font-size: 1rem;
+}
+
+.game-div li {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.61);
+}
